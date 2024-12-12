@@ -35,8 +35,9 @@
                 <div class="row" id="banner-row">
                     <div class="col-md-6" id="service-col1">
                         <h1 class="text-center">ABOUT US</h1>
-                        <p>We at [Company Name] pride ourselves on delivering exceptional services tailored to your needs. Our team is committed to innovation and excellence in everything we do.</p>
-                        <p>Explore our website to learn more about our offerings and read reviews from satisfied clients.</p>
+                        <p>We offer expert computer repair, custom builds, console modding, and MacBook repair services to keep your tech running smoothly. Count on us for top-notch service and unbeatable results.</p>
+
+                        <p>Daniel Konatham is a highly skilled technician with a decade of experience building custom computers and providing hardware solutions. Having worked with Austin ISD, Reynolds and Reynolds, and various local device repair shops, he brings a wealth of expertise to every project. Daniel is passionate about delivering exceptional results and is dedicated to ensuring your satisfaction with every service.</p>
 
                     </div>
                     <div class="col-md-6">
