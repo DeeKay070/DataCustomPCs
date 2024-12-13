@@ -33,72 +33,72 @@
             <section id="about">
             <div class="container-fluid" id="service-container">
                 <div class="row" id="banner-row">
-                    <div class="col-md-6" id="service-col1">
+                    <div class="col-md-5" id="service-col1">
                         <h1 class="text-center">ABOUT US</h1>
-                        <p>We offer expert computer repair, custom builds, console modding, and MacBook repair services to keep your tech running smoothly. Count on us for top-notch service and unbeatable results.</p>
+                        <p class="fs-4">We offer expert computer repair, custom builds, console modding, and MacBook repair services to keep your tech running smoothly. Count on us for top-notch service and unbeatable results.</p>
 
-                        <p>Daniel Konatham is a highly skilled technician with a decade of experience building custom computers and providing hardware solutions. Having worked with Austin ISD, Reynolds and Reynolds, and various local device repair shops, he brings a wealth of expertise to every project. Daniel is passionate about delivering exceptional results and is dedicated to ensuring your satisfaction with every service.</p>
+                        <p class="fs-4">Daniel Konatham is a highly skilled technician with a decade of experience building custom computers and providing hardware solutions. Having worked with Austin ISD, Reynolds and Reynolds, and various local device repair shops, he brings a wealth of expertise to every project. Daniel is passionate about delivering exceptional results and is dedicated to ensuring your satisfaction with every service.</p>
 
                     </div>
-                    <div class="col-md-6">
-                        <img src="https://cdn.pixabay.com/photo/2017/11/27/21/31/computer-2982270_640.jpg" alt="Company Overview" class="img-fluid rounded">
+                    <div class="col-md-7">
+                        <img src="https://images.pexels.com/photos/1006293/pexels-photo-1006293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Company Overview" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
             </section>
             <section id="services">
-                <h1 class="text-center my-5">SERVICES</h1>
+                <h1 class="text-center my-5 fs-1">SERVICES</h1>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12 my-4" id="service-col2">
                             <div class="row" id="banner-row">
-                                <div class="col-md-7" id="service-col1">
-                                    <h3>Custom PCs</h3>
+                                <div class="col-md-5" id="service-col1">
+                                    <h3 class ="fs-2">Custom PCs</h3>
                                     
-                                    <p>
-                                    We can build you a custom PC that fits your needs. We can build gaming PCs, work PCs, and more.
+                                    <p class="fs-4">
+                                    We specialize in building high-performance custom PCs tailored to your specific needs. Whether you're a gamer looking for a cutting-edge rig with the latest GPUs, a professional needing a workstation optimized for heavy computing tasks, or someone seeking a balanced machine for everyday use, we’ve got you covered. Our team will work closely with you to select the right components, ensuring your custom PC delivers the performance, reliability, and value you deserve. From RGB lighting to silent cooling solutions, we bring your vision to life.
                                     </p>
-                                    <h3>Console Modding</h3>
+                                    <h3 class ="fs-2">Console Modding</h3>
                                     
-                                    <p>
-                                    osihfoiajsndoajnsdoansdiojansdiokjnasdoijnsa
+                                    <p class="fs-4">
+                                    Transform your gaming console into a unique masterpiece with our professional modding services. We offer software modding, lighting enhancements, hardware upgrades, and more to elevate your gaming experience. Whether you want a console with retro emulation, upgraded hardware for older handhelds, or features like expanded storage, our team ensures that your console not only looks amazing but functions flawlessly.
                                     </p>
                                 </div>
-                                <div class="col-md-5" id="service-col1">
-                                    <img src="https://www.shutterstock.com/image-photo/gaming-pc-rainbow-led-light-600nw-2224673809.jpg" alt="Company Overview" class="img-fluid rounded">
+                                <div class="col-md-7" id="service-col1">
+                                    <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Company Overview" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12 my-4" id="service-col3">
                             <div class="row" id="banner-row">
-                                <div class="col-md-5" id="service-col1">
-                                    <img src="https://media.istockphoto.com/id/1432883210/photo/unrecognizable-man-with-screwdriver-repairing-his-laptop.jpg?b=1&s=612x612&w=0&k=20&c=WMpbg3KxhMPrIxPHyNciOIX4K8bU7KtKRsN6XYfeQWo=" alt="Company Overview" class="img-fluid rounded">
-                                </div>
                                 <div class="col-md-7" id="service-col1">
-                                    <h3>Hardware Repair</h3>
+                                    <img src="https://images.pexels.com/photos/2588757/pexels-photo-2588757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Company Overview" class="img-fluid rounded">
+                                </div>
+                                <div class="col-md-5" id="service-col1">
+                                    <h3 class ="fs-2">Hardware Repair</h3>
                                     
-                                    <p>
-                                    We can repair your hardware. We can fix your laptop, desktop, or tablet.
+                                    <p class="fs-4">
+                                    Is your device not functioning properly? We offer comprehensive hardware repair services for laptops, desktops, tablets, and more. Whether it's a damaged motherboard, faulty graphics card, broken keyboard, or unresponsive touch screen, our skilled technicians diagnose and fix the issue with precision. Using high-quality parts and thorough testing, we ensure your device performs like new.
                                     </p>
-                                    <h3>Slow Computer Tune Up</h3>
+                                    <h3 class ="fs-2">Slow Computer Tune Up</h3>
                                     
-                                    <p>
-                                    oijnasdoifnaosdnfoasndfonasdofjnasodfnojsadnf
+                                    <p class="fs-4">
+                                    Is your computer running slower than usual? Our slow computer tune-up service is designed to bring your system back to life. We perform a thorough cleanup of unnecessary files, optimize startup processes, and check for malware or outdated software. Additionally, we ensure your hardware is in top shape by cleaning components and checking for any bottlenecks. Get ready to experience a faster, more responsive computer.
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12 my-4" id="service-col1">
                             <div class="row" id="banner-row">
-                                <div class="col-md-7" id="service-col1">
-                                    <h3>Phone Screen Repair</h3>
+                                <div class="col-md-5" id="service-col1">
+                                    <h3 class ="fs-2">Phone Screen Repair</h3>
                                     
-                                    <p>
-                                    Ask us about our phone screen repair services. We can fix your phone screen in no time.
+                                    <p class="fs-4">
+                                    Accidentally cracked your phone screen? Don’t worry, we’ve got you covered. Our phone screen repair services are fast, reliable, and affordable. We use high-quality replacement screens and employ precision techniques to ensure your phone looks and functions like new. From minor cracks to completely shattered screens, we handle repairs for all major phone brands and models with care and expertise.
                                     </p>
                                 </div>
-                                <div class="col-md-5" id="service-col1">
-                                    <img src="https://plus.unsplash.com/premium_photo-1725207397701-45e1dc41d745?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnJva2VuJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D" alt="Company Overview" class="img-fluid rounded">
+                                <div class="col-md-7" id="service-col1">
+                                    <img src="https://images.pexels.com/photos/288479/pexels-photo-288479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Company Overview" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>

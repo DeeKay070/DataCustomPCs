@@ -26,7 +26,7 @@
     <label for="physical-damage">Physical Damage</label><br><br>
 
     <label for="description">Issue Description:</label><br>
-    <textarea id="description" name="description" class="col-12" required></textarea><br><br>
+    <textarea id="description" name="description" class="col-12 form-control p-3" rows="10"required></textarea><br><br>
 
     <input type="submit" value="Submit Ticket">
 </form>
