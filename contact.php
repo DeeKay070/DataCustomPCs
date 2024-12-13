@@ -5,7 +5,8 @@
     <div class="content-wrapper">
         <?php include 'nav.php'; ?>
         <main class="container my-4">
-            <h2>Submit an Issue</h2>
+            <h2>Contact Us</h2>
+            <p class = "text-start px-0">Having an issue with your device? Let us know, and we can give you a quote.</p>
             <?php
                 session_start();
                 if (isset($_SESSION['success_message'])) {

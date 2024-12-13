@@ -9,6 +9,12 @@ require 'PHPMailer-master\src\Exception.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $customerEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
     $issueDescription = htmlspecialchars($_POST['description']);
+    $name = htmlspecialchars($_POST['name']);
+    $phone_number = htmlspecialchars($_POST['phone_number']);
+    $device_type = htmlspecialchars($_POST['device_type']);
+    $water_damage = htmlspecialchars($_POST['water_damage']);
+    $physical_damage = htmlspecialchars($_POST['physical_damage']);
+
     
     $rawTicketNumber = uniqid("REQ-"); // Generates something like "REQ64eac2a0"
 
@@ -28,31 +34,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
+        $mail->Host       = 'smtp.purelymail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'mightyfineman777@gmail.com';
-        $mail->Password   = 'GMAIL_APP_PASSWORD';
+        $mail->Username   = 'daniel@datacustompcs.com';
+        $mail->Password   = 'APP_PASSWORD';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         // Email to company
-        $mail->setFrom('mightyfineman777@gmail.com', 'Support Team');
-        $mail->addAddress('ethan@loszitros.com');
-        $mail->Subject = "New Support Ticket: $ticketNumber";
+        $mail->setFrom($mail->Username, 'Data Custom PCs');
+        $mail->addAddress($mail->Username);
+        $mail->Subject = $name . " - New Support Ticket: $ticketNumber";
         $mail->Body    = "You have received a new support ticket.\n\n" .
                          "Ticket Number: $ticketNumber\n" .
+                         "Customer Name: $name\n" .
                          "Customer Email: $customerEmail\n" .
-                         "Issue Description:\n$issueDescription\n";
+                         "Customer Phone: $phone_number\n" .
+                         "Device Type: $device_type\n" .
+                         "Water Damage: $water_damage\n" .
+                         "Physical Damage: $physical_damage\n" .
+                         "Issue Description:\n\n$issueDescription\n";
         $mail->send();
 
         // Email to customer
         $mail->clearAddresses(); // Clear previous addresses
         $mail->addAddress($customerEmail);
         $mail->Subject = "Your Support Ticket: $ticketNumber";
-        $mail->Body    = "Thank you for reaching out to us. Your ticket has been received.\n\n" .
+        $mail->Body    = "Thank you for reaching out to us. Your ticket has been received and you will receive a response soon.\n\n" .
                          "Ticket Number: $ticketNumber\n" .
-                         "Issue Description:\n$issueDescription\n\n" .
-                         "We will get back to you shortly.";
+                         "Device Type: $device_type\n" .
+                         "Water Damage: $water_damage\n" .
+                         "Physical Damage: $physical_damage\n" .
+                         "Issue Description:\n\n$issueDescription\n\n" .
         $mail->send();
         // Existing code for ticket generation and email sending
         $_SESSION['success_message'] = "Thank you! Your ticket number is $ticketNumber. A confirmation email has been sent to $customerEmail.";

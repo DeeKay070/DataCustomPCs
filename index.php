@@ -24,7 +24,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css">
-    <title>Data PCs</title>
+    <title>Data Custom PCs</title>
 </head>
 <body>
     <div class="content-wrapper">
@@ -50,20 +50,6 @@
                 <h1 class="text-center my-5">SERVICES</h1>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-12 my-4" id="service-col1">
-                            <div class="row" id="banner-row">
-                                <div class="col-md-5" id="service-col1">
-                                    <img src="https://plus.unsplash.com/premium_photo-1725207397701-45e1dc41d745?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnJva2VuJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D" alt="Company Overview" class="img-fluid rounded">
-                                </div>
-                                <div class="col-md-7" id="service-col1">
-                                    <h3>Phone Screen Repair</h3>
-                                    
-                                    <p>
-                                    Ask us about our phone screen repair services. We can fix your phone screen in no time.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-md-12 my-4" id="service-col2">
                             <div class="row" id="banner-row">
                                 <div class="col-md-7" id="service-col1">
@@ -71,6 +57,11 @@
                                     
                                     <p>
                                     We can build you a custom PC that fits your needs. We can build gaming PCs, work PCs, and more.
+                                    </p>
+                                    <h3>Console Modding</h3>
+                                    
+                                    <p>
+                                    osihfoiajsndoajnsdoansdiojansdiokjnasdoijnsa
                                     </p>
                                 </div>
                                 <div class="col-md-5" id="service-col1">
@@ -84,11 +75,30 @@
                                     <img src="https://media.istockphoto.com/id/1432883210/photo/unrecognizable-man-with-screwdriver-repairing-his-laptop.jpg?b=1&s=612x612&w=0&k=20&c=WMpbg3KxhMPrIxPHyNciOIX4K8bU7KtKRsN6XYfeQWo=" alt="Company Overview" class="img-fluid rounded">
                                 </div>
                                 <div class="col-md-7" id="service-col1">
-                                    <h3>Hadware Repair</h3>
+                                    <h3>Hardware Repair</h3>
                                     
                                     <p>
                                     We can repair your hardware. We can fix your laptop, desktop, or tablet.
                                     </p>
+                                    <h3>Slow Computer Tune Up</h3>
+                                    
+                                    <p>
+                                    oijnasdoifnaosdnfoasndfonasdofjnasodfnojsadnf
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 my-4" id="service-col1">
+                            <div class="row" id="banner-row">
+                                <div class="col-md-7" id="service-col1">
+                                    <h3>Phone Screen Repair</h3>
+                                    
+                                    <p>
+                                    Ask us about our phone screen repair services. We can fix your phone screen in no time.
+                                    </p>
+                                </div>
+                                <div class="col-md-5" id="service-col1">
+                                    <img src="https://plus.unsplash.com/premium_photo-1725207397701-45e1dc41d745?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnJva2VuJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D" alt="Company Overview" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>
