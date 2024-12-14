@@ -12,6 +12,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
     $phone_number = htmlspecialchars($_POST['phone_number']);
     $device_type = htmlspecialchars($_POST['device_type']);
+    $other_info = htmlspecialchars($_POST['other_info']);
+    if ($device_type === 'Other') {
+        $device_type = $other_info;
+    }
     $water_damage = htmlspecialchars($_POST['water_damage']);
     $physical_damage = htmlspecialchars($_POST['physical_damage']);
 

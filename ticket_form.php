@@ -26,8 +26,10 @@
     </div>
     <small class="error-message" id="device-error"></small><br>
 
-    <label>If you check other, what device are you needing help with?:</label><br>
-    <input type="text" id="other_info" name="other_info" class="form-control"><br>
+    <div id="other-info-container">
+        <label for="other_info">If you check other, what device are you needing help with?:</label><br>
+        <input type="text" id="other_info" name="other_info" class="form-control"><br>
+    </div>
 
     <label>Damage Information (if applicable):</label><br>
     <div>
@@ -44,6 +46,18 @@
     <input type="submit" value="Submit Ticket" class="btn btn-primary">
 </form>
 <script>
+    const deviceTypeRadios = document.getElementsByName('device_type');
+        const otherInfoContainer = document.getElementById('other-info-container');
+
+        deviceTypeRadios.forEach(radio => {
+            radio.addEventListener('change', function () {
+                if (this.id === 'other' && this.checked) {
+                    otherInfoContainer.style.display = 'block';
+                } else {
+                    otherInfoContainer.style.display = 'none';
+                }
+            });
+        });
     document.getElementById('ticketForm').addEventListener('submit', function (event) {
         let hasErrors = false;
         let firstErrorField = null;

@@ -131,6 +131,9 @@ h1{
   padding-top: 10px;
 }
 
+#other-info-container {
+    display: none;
+}
 
 /* media */
 @media only screen and (max-width: 987px){
