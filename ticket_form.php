@@ -11,7 +11,7 @@
     <input type="tel" id="phone_number" name="phone_number" class="form-control" required>
     <small class="error-message" id="phone-error"></small><br>
 
-    <label>Type of Device Affected*:</label><br>
+    <label>Type of Device*:</label><br>
     <div>
         <input type="radio" id="windows" name="device_type" value="Windows" required>
         <label for="windows">Windows Computer</label><br>
@@ -39,7 +39,7 @@
         <label for="physical-damage">Physical Damage</label>
     </div><br>
 
-    <label for="description">Issue Description*:</label><br>
+    <label for="description">Request Description*:</label><br>
     <textarea id="description" name="description" class="col-12 form-control p-3" rows="10" required></textarea>
     <small class="error-message" id="description-error"></small><br><br>
 
