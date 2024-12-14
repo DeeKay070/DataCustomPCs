@@ -1,12 +1,58 @@
 <?php
 // services.php: Define services as an array for dynamic rendering
 $services = [
-    ["name" => "Custom PCs", "description" => "High-performance custom PCs tailored to your needs.", "price" => 1200],
-    ["name" => "Console Modding", "description" => "Professional modding services for gaming consoles.", "price" => 300],
-    ["name" => "Hardware Repair", "description" => "Comprehensive hardware repair services.", "price" => 150],
-    ["name" => "Slow Computer Tune Up", "description" => "Tune-up services to optimize your computer.", "price" => 100],
-    ["name" => "Phone Screen Repair", "description" => "Reliable and affordable phone screen repairs.", "price" => 200]
+    [
+        "name" => "High End Custom PC", 
+        "description" => "Experience unmatched performance with our high-end custom PCs, featuring cutting-edge components and tailored configurations for gaming, productivity, and more.", 
+        "price" => 1200
+    ],
+    [
+        "name" => "Middle Custom PC", 
+        "description" => "Get the perfect balance of performance and affordability with our mid-range custom PCs, ideal for everyday tasks and moderate gaming.", 
+        "price" => 800
+    ],
+    [
+        "name" => "Budget Custom PC", 
+        "description" => "Affordable and reliable custom PCs designed for basic computing needs, offering great value for everyday use.", 
+        "price" => 500
+    ],
+    [
+        "name" => "Your Parts, Our Build", 
+        "description" => "If you buy the parts, we'll build the PC! Our expert technicians will assemble and test your custom PC to ensure optimal performance, reliability, and cable management.", 
+        "price" => 50
+    ],
+    [
+        "name" => "Slow Computer Tune Up", 
+        "description" => "Revitalize your sluggish computer with our comprehensive tune-up service, including system cleanup, optimization, and malware checks.", 
+        "price" => 30
+    ],
+    [
+        "name" => "Wii Hack", 
+        "description" => "Unlock new features on your Nintendo Wii with our professional hacking services, including homebrew installation and game backups.", 
+        "price" => 25
+    ],
+    [
+        "name" => "Wii U Hack", 
+        "description" => "Enhance your Wii U with advanced hacking services, enabling custom software, homebrew games, and more.", 
+        "price" => 25
+    ],
+    [
+        "name" => "3DS Hack", 
+        "description" => "Expand the capabilities of your Nintendo 3DS with our hacking service, offering access to custom firmware, game backups, and unique features.", 
+        "price" => 25
+    ],
+    [
+        "name" => "GBA Screen Replacement", 
+        "description" => "Restore your Game Boy Advance to its former glory with our screen replacement service, featuring high-quality, durable screens.", 
+        "price" => 50
+    ],
+    [
+        "name" => "Custom JoyCons", 
+        "description" => "Personalize your Nintendo Switch Joy-Con controllers with our custom designs, colors, and enhanced grips for a unique gaming experience.", 
+        "price" => 100
+    ]
 ];
+
 ?>
 
 <?php include 'head.php'; ?>
@@ -14,6 +60,7 @@ $services = [
 <?php include 'nav.php'; ?>
 <div class="container my-5">
     <h1 class="text-center mb-4">Shop Our Services</h1>
+    <p>There is no need to pay at this time, an invoice will be sent later in the process. Feel free to add any service that you want and submit to create an email request.</p>
 
     <!-- Service List -->
     <div class="row" id="services">
@@ -43,6 +90,7 @@ $services = [
 
     <button id="checkout-button" class="btn btn-primary" disabled>Submit</button>
 </div>
+<?php include 'footer.php'; ?>
 
 <script>
     // JavaScript for Cart Management
