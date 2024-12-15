@@ -41,7 +41,7 @@ $services = [
         "name" => "Wii U Hack", 
         "description" => "Enhance your Wii U with advanced hacking services, enabling custom software, homebrew games, and more.", 
         "price" => 25,
-        "img" => "https://www.dekazeta.net/foro/uploads/monthly_2019_07/maxresdefault.jpg.beb318cd0988f869cf7af2b7e78861c2.jpg"
+        "img" => "https://m.media-amazon.com/images/I/51TQPhqO9YL._AC_UF894,1000_QL80_.jpg"
     ],
     [
         "name" => "3DS Hack", 
@@ -53,7 +53,7 @@ $services = [
         "name" => "GBA Screen Mod", 
         "description" => "Upgrade your GBA to have a backlit LCD screen. You will be able to see games like you never could before while retaining the feel of the original console.", 
         "price" => 50,
-        "img" => "https://i.etsystatic.com/13912078/r/il/5ef73e/3261335437/il_570xN.3261335437_s3ib.jpg"
+        "img" => "https://godofgamingshop.com/cdn/shop/files/GBAGlacierIPScopy.jpg?v=1698181308"
     ],
     [
         "name" => "Custom JoyCons", 
@@ -177,8 +177,11 @@ $services = [
 
     // Checkout button functionality
     document.getElementById('checkout-button').addEventListener('click', () => {
-        alert('Thank you for your order! This feature is under development.');
+        const orderSummary = JSON.stringify(cart);
+        const formUrl = `checkout.php?cart=${encodeURIComponent(orderSummary)}`;
+        window.location.href = formUrl;
     });
+
 </script>
 </body>
 </html>
