@@ -20,4 +20,16 @@
 </div>
 <?php include 'footer.php'; ?>
 </body>
+<script>
+    // Function to clear the cart cache
+    function clearCartCache() {
+        localStorage.removeItem('cart'); // Removes the 'cart' item from localStorage
+        console.log('Cart cache cleared.');
+    }
+
+    // Clear the cart cache when the page loads
+    window.onload = function() {
+        clearCartCache();
+    };
+</script>
 </html>

@@ -23,18 +23,17 @@
             unset($_SESSION['error_message']); // Clear the message
         }
     ?>
-    <!-- User Information Form -->
     <form id="order-form" action="submit_order.php" method="post">
         <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
+            <label for="name" class="form-label">Name*</label>
             <input type="text" id="name" name="name" class="form-control" required>
         </div>
         <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label">Email*</label>
             <input type="email" id="email" name="email" class="form-control" required>
         </div>
         <div class="mb-3">
-            <label for="phone" class="form-label">Phone</label>
+            <label for="phone" class="form-label">Phone*</label>
             <input type="tel" id="phone" name="phone" class="form-control" required>
         </div>
         <div class="mb-3">

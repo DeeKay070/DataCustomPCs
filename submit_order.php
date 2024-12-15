@@ -8,8 +8,8 @@ require 'PHPMailer-master\src\Exception.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $phone = htmlspecialchars($_POST['phone_number']);
+    $customerEmail = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['phone']);
     $details = htmlspecialchars($_POST['details']);
     $cart = json_decode($_POST['cart'], true);
 
@@ -35,14 +35,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     $orderSummary .= "\nTotal: \$$total";
-    $requestEmailBody = "Customer Details:\nName: $name\nEmail: $email\nPhone: $phone\nExtra Details: $details\n\n" . $orderSummary;
+    $requestEmailBody = "Customer Details:\nName: $name\nEmail: $customerEmail\nPhone: $phone\nExtra Details: $details\n\n" . $orderSummary;
 
     // Support email
     $supportEmail = 'daniel@datacustompcs.com';
 
     // Confirmation email to user
     $userSubject = "Order Confirmation - Thank You, $name!";
-    $userMessage = "Thank you for your order, $name! We will be in contact with you soon about fulfilling your request.\n\nFor future reference, your ticket numebr is: $ticketNumber\n\nHere is a summary of your order:\n\n$orderSummary";
+    $userMessage = "Thank you for your order, $name! We will be in contact with you soon about fulfilling your request.\n\nFor future reference, your ticket number is: $ticketNumber\n\n$orderSummary";
     
     
 
@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->send();
 
         // Email to customer
-        $mail->clearAddresses(); // Clear previous addresses
+        $mail->clearAddresses();
         $mail->addAddress($customerEmail);
         $mail->Subject = "Your Order Number: $ticketNumber";
         $mail->Body    = $userMessage;
