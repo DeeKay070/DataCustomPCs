@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $requestEmailBody = "Customer Details:\nName: $name\nEmail: $email\nPhone: $phone\nExtra Details: $details\n\n" . $orderSummary;
 
     // Support email
-    $supportEmail = 'daniel@datacustompcs.com'; // Replace with your support email
+    $supportEmail = 'daniel@datacustompcs.com';
 
     // Confirmation email to user
     $userSubject = "Order Confirmation - Thank You, $name!";

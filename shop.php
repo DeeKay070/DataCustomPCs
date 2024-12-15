@@ -107,7 +107,7 @@ $services = [
 
 <script>
     // JavaScript for Cart Management
-    const cart = [];
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     // Function to render cart items
     function renderCart() {
@@ -124,7 +124,7 @@ $services = [
         list.className = 'list-group';
         let total = 0;
 
-        cart.forEach(item => {
+        cart.forEach((item, index) => {
             const listItem = document.createElement('li');
             listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
             listItem.textContent = `${item.name} - $${item.price}`;
@@ -134,7 +134,7 @@ $services = [
             removeButton.textContent = 'Remove';
             removeButton.className = 'btn btn-danger btn-sm';
             removeButton.onclick = () => {
-                removeFromCart(item);
+                removeFromCart(index);
             };
 
             listItem.appendChild(removeButton);
@@ -154,15 +154,14 @@ $services = [
     // Function to add an item to the cart
     function addToCart(name, price) {
         cart.push({ name, price });
+        localStorage.setItem('cart', JSON.stringify(cart));
         renderCart();
     }
 
     // Function to remove an item from the cart
-    function removeFromCart(item) {
-        const index = cart.indexOf(item);
-        if (index > -1) {
-            cart.splice(index, 1);
-        }
+    function removeFromCart(index) {
+        cart.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
         renderCart();
     }
 
@@ -177,10 +176,11 @@ $services = [
 
     // Checkout button functionality
     document.getElementById('checkout-button').addEventListener('click', () => {
-        const orderSummary = JSON.stringify(cart);
-        const formUrl = `checkout.php?cart=${encodeURIComponent(orderSummary)}`;
-        window.location.href = formUrl;
+        window.location.href = 'checkout.php';
     });
+
+    // Render cart on page load
+    renderCart();
 
 </script>
 </body>
