@@ -4,52 +4,62 @@ $services = [
     [
         "name" => "High End Custom PC", 
         "description" => "Experience unmatched performance with our high-end custom PCs, featuring cutting-edge components and tailored configurations for gaming, productivity, and more.", 
-        "price" => 1200
+        "price" => 1200,
+        "img" => "https://images.pexels.com/photos/24613564/pexels-photo-24613564/free-photo-of-components-of-computer.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ],
     [
         "name" => "Middle Custom PC", 
         "description" => "Get the perfect balance of performance and affordability with our mid-range custom PCs, ideal for everyday tasks and moderate gaming.", 
-        "price" => 800
+        "price" => 800,
+        "img" => "https://images.pexels.com/photos/2225618/pexels-photo-2225618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ],
     [
         "name" => "Budget Custom PC", 
         "description" => "Affordable and reliable custom PCs designed for basic computing needs, offering great value for everyday use.", 
-        "price" => 500
+        "price" => 500,
+        "img" => "https://images.pexels.com/photos/3977908/pexels-photo-3977908.jpeg?auto=compress&cs=tinysrgb&w=600"
     ],
     [
         "name" => "Your Parts, Our Build", 
         "description" => "If you buy the parts, we'll build the PC! Our expert technicians will assemble and test your custom PC to ensure optimal performance, reliability, and cable management.", 
-        "price" => 50
+        "price" => 50,
+        "img" => "https://images.pexels.com/photos/6913135/pexels-photo-6913135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     ],
     [
         "name" => "Slow Computer Tune Up", 
         "description" => "Revitalize your sluggish computer with our comprehensive tune-up service, including system cleanup, optimization, and malware checks.", 
-        "price" => 30
+        "price" => 30,
+        "img" => "https://media.istockphoto.com/id/1369357107/photo/software-update.jpg?b=1&s=612x612&w=0&k=20&c=hkWBBmJdnDo6BaAV4CNkqx9IpvSt6xHPTEXfymoR4NI="
     ],
     [
         "name" => "Wii Hack", 
         "description" => "Unlock new features on your Nintendo Wii with our professional hacking services, including homebrew installation and game backups.", 
-        "price" => 25
+        "price" => 25,
+        "img" => "https://www.nintendo.com/eu/media/images/10_share_images/support_9/H2x1_NintendoWii_support_no_logo_image800w.jpg"
     ],
     [
         "name" => "Wii U Hack", 
         "description" => "Enhance your Wii U with advanced hacking services, enabling custom software, homebrew games, and more.", 
-        "price" => 25
+        "price" => 25,
+        "img" => "https://www.dekazeta.net/foro/uploads/monthly_2019_07/maxresdefault.jpg.beb318cd0988f869cf7af2b7e78861c2.jpg"
     ],
     [
         "name" => "3DS Hack", 
         "description" => "Expand the capabilities of your Nintendo 3DS with our hacking service, offering access to custom firmware, game backups, and unique features.", 
-        "price" => 25
+        "price" => 25,
+        "img" => "https://media.gamestop.com/i/gamestop/10129117/Nintendo-3DS-Purple?\$pdp$"
     ],
     [
-        "name" => "GBA Screen Replacement", 
-        "description" => "Restore your Game Boy Advance to its former glory with our screen replacement service, featuring high-quality, durable screens.", 
-        "price" => 50
+        "name" => "GBA Screen Mod", 
+        "description" => "Upgrade your GBA to have a backlit LCD screen. You will be able to see games like you never could before while retaining the feel of the original console.", 
+        "price" => 50,
+        "img" => "https://i.etsystatic.com/13912078/r/il/5ef73e/3261335437/il_570xN.3261335437_s3ib.jpg"
     ],
     [
         "name" => "Custom JoyCons", 
         "description" => "Personalize your Nintendo Switch Joy-Con controllers with our custom designs, colors, and enhanced grips for a unique gaming experience.", 
-        "price" => 100
+        "price" => 100,
+        "img" => "https://itsmysnap.com/cdn/shop/files/PassionRedShellsForNSSwitchJoycon_OLEDJoycon.webp?v=1718071789&width=1445"
     ]
 ];
 
@@ -68,6 +78,9 @@ $services = [
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
                     <div class="card-body">
+                        <div class ="mb-3 p-0">
+                            <img src=<?= $service['img'] ?> alt="Company Overview" class="img-fluid rounded py-10">        
+                        </div>
                         <h5 class="card-title"><?= $service['name'] ?></h5>
                         <p class="card-text"><?= $service['description'] ?></p>
                         <p class="text-primary fw-bold">$<?= $service['price'] ?></p>
