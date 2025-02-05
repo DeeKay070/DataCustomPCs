@@ -1,0 +1,29 @@
+name: Deploy Frontend to Bluehost
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build Frontend
+      run: npm run build # Modify this if needed
+
+    - name: Deploy via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.BH_FTP_SERVER }}
+        username: ${{ secrets.BH_FTP_USER }}
+        password: ${{ secrets.BH_FTP_PASSWORD }}
+        local-dir: "build/"
+        server-dir: "/public_html/"
