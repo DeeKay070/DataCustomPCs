@@ -1,0 +1,16 @@
+# Enable the RewriteEngine
+RewriteEngine On
+
+# Redirect all HTTP traffic to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+
+# Custom redirects (example)
+# Redirect 301 /old-page.html /new-page.html
+
+# Handle 404 errors
+ErrorDocument 404 /404.html
