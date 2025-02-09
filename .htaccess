@@ -1,16 +1,18 @@
 # Enable the RewriteEngine
 RewriteEngine On
 
-# Redirect all HTTP traffic to HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-# Redirect www to non-www
+# Redirect www to non-www FIRST (to avoid redirect loops)
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 
-# Custom redirects (example)
-# Redirect 301 /old-page.html /new-page.html
+# Force HTTPS after handling www/non-www redirects
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Handle 404 errors
 ErrorDocument 404 /404.html
+
+# Set Referrer Policy to allow external links
+<IfModule mod_headers.c>
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
