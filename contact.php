@@ -20,7 +20,7 @@
                 }
             ?>
 
-            <?php include 'ticket_form.php'; ?>
+            <?php include 'ticket_form.html'; ?>
         </main>
         <?php include 'footer.php'; ?>
     </div>
