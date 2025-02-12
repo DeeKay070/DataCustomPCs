@@ -1,4 +1,3 @@
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -23,7 +22,12 @@
                 </li>
             </ul>
         </div>
-        <li style="white-space: nowrap;"><a href="#" class="button primary">Sign Up</a></li>
+
+        <!-- Sign Up & Sign In Buttons -->
+        <div class="d-flex ms-auto">
+            <a href="signup.php" class="btn btn-primary me-2">Sign Up</a>
+            <a href="signin.php" class="btn btn-outline-primary">Sign In</a>
+        </div>
     </div>
 </nav>
 
