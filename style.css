@@ -19,6 +19,13 @@
     color: white !important;
 }
 
+.navbar-brand img {
+    height: 50px; /* Adjust based on your preferred height */
+    width: auto;  /* Keeps the aspect ratio */
+    max-width: 100%; /* Ensures it doesn't overflow */
+}
+
+
 /* banner */
 
 #banner-container{
@@ -86,6 +93,8 @@ h1{
     padding-top: 15px;
     
 }
+
+
 
 /* product */
 
