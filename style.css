@@ -20,7 +20,7 @@
 }
 
 .navbar-brand img {
-    height: 150px; /* Adjust based on your preferred height */
+    height: 75px; /* Adjust based on your preferred height */
     width: auto;  /* Keeps the aspect ratio */
     max-width: 100%; /* Ensures it doesn't overflow */
 }
