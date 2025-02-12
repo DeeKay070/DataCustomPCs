@@ -23,6 +23,7 @@
                 </li>
             </ul>
         </div>
+        <li style="white-space: nowrap;"><a href="#" class="button primary">Sign Up</a></li>
     </div>
 </nav>
 

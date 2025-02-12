@@ -22,5 +22,5 @@
 "https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
-    <title>Data PCs</title>
+    <title>Data Custom PCs</title>
 </head>
