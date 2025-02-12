@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit a Ticket | DataCustomPCs</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="path/to/your/custom/styles.css" rel="stylesheet">
+    
     <script>
         async function submitTicket(event) {
             event.preventDefault();
@@ -41,51 +46,59 @@
         }
     </script>
 </head>
-<body>
-    <h2>Submit a Ticket</h2>
-    <form id="ticketForm" onsubmit="submitTicket(event)">
-        <label for="name">Name*</label><br>
-        <input type="text" id="name" required><br>
+<body class="container mt-4">
+    <h2 class="text-center">Submit a Ticket</h2>
+    <form id="ticketForm" class="p-4 border rounded shadow" onsubmit="submitTicket(event)">
+        <label for="name" class="form-label">Name*</label>
+        <input type="text" id="name" class="form-control" required>
+        
+        <label for="email" class="form-label mt-2">Email*</label>
+        <input type="email" id="email" class="form-control" required>
 
-        <label for="email">Email*</label><br>
-        <input type="email" id="email" required><br>
+        <label for="phone_number" class="form-label mt-2">Phone Number*</label>
+        <input type="tel" id="phone_number" class="form-control" required>
 
-        <label for="phone_number">Phone Number*</label><br>
-        <input type="tel" id="phone_number" required><br>
-
-        <label>Type of Device*</label><br>
-        <div>
-            <input type="radio" id="windows" name="device_type" value="Windows" required>
-            <label for="windows">Windows Computer</label><br>
-            <input type="radio" id="phone" name="device_type" value="Phone">
-            <label for="phone">Mobile Phone</label><br>
-            <input type="radio" id="console" name="device_type" value="Console">
-            <label for="console">Console</label><br>
-            <input type="radio" id="macbook" name="device_type" value="MacBook">
-            <label for="macbook">MacBook</label><br>
-            <input type="radio" id="other" name="device_type" value="Other">
-            <label for="other">Other</label>
+        <label class="form-label mt-2">Type of Device*</label>
+        <div class="form-check">
+            <input type="radio" id="windows" name="device_type" value="Windows" class="form-check-input" required>
+            <label for="windows" class="form-check-label">Windows Computer</label>
         </div>
-        <br>
-
-        <div id="other-info-container" style="display: none;">
-            <label for="other_info">If you selected 'Other', specify the device:</label><br>
-            <input type="text" id="other_info"><br>
+        <div class="form-check">
+            <input type="radio" id="phone" name="device_type" value="Phone" class="form-check-input">
+            <label for="phone" class="form-check-label">Mobile Phone</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" id="console" name="device_type" value="Console" class="form-check-input">
+            <label for="console" class="form-check-label">Console</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" id="macbook" name="device_type" value="MacBook" class="form-check-input">
+            <label for="macbook" class="form-check-label">MacBook</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" id="other" name="device_type" value="Other" class="form-check-input">
+            <label for="other" class="form-check-label">Other</label>
         </div>
 
-        <label>Damage Information (if applicable)</label><br>
-        <div>
-            <input type="checkbox" id="water-damage" name="water_damage" value="yes">
-            <label for="water-damage">Water Damage</label><br>
-            <input type="checkbox" id="physical-damage" name="physical_damage" value="yes">
-            <label for="physical-damage">Physical Damage</label>
-        </div><br>
+        <div id="other-info-container" class="mt-3" style="display: none;">
+            <label for="other_info" class="form-label">If you selected 'Other', specify the device:</label>
+            <input type="text" id="other_info" class="form-control">
+        </div>
 
-        <label for="description">Request Description*</label><br>
-        <textarea id="description" rows="10" required></textarea>
-        <br><br>
+        <label class="form-label mt-3">Damage Information (if applicable)</label>
+        <div class="form-check">
+            <input type="checkbox" id="water-damage" name="water_damage" value="yes" class="form-check-input">
+            <label for="water-damage" class="form-check-label">Water Damage</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" id="physical-damage" name="physical_damage" value="yes" class="form-check-input">
+            <label for="physical-damage" class="form-check-label">Physical Damage</label>
+        </div>
 
-        <button type="submit">Submit Ticket</button>
+        <label for="description" class="form-label mt-3">Request Description*</label>
+        <textarea id="description" class="form-control p-3" rows="10" required></textarea>
+
+        <button type="submit" class="btn btn-primary mt-3 w-100">Submit Ticket</button>
     </form>
 
     <script>
@@ -96,5 +109,7 @@
             });
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
