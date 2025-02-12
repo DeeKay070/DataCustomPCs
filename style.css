@@ -294,3 +294,9 @@ input[type="button"],
         cursor: default;
         opacity: 0.25;
     }
+
+/* Spacer */
+    .formbold-spacer {
+        height: 20px; /* Adjust spacing as needed */
+    }
+    
