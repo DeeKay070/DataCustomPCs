@@ -1,12 +1,7 @@
 <div class="formbold-main-wrapper">
-
-  <p class="formbold-back-link">
-    <a href="https://www.datacustompcs.com">&lt; Back to Data Custom PCs</a>
-  </p>
-
   <div class="formbold-form-wrapper">
-    
-    
+    <!-- Large X Close Button -->
+    <a href="https://www.datacustompcs.com" class="formbold-close-btn">×</a>
     <img src="your-image-url-here.jpg">
 
     <form action="https://formbold.com/s/FORM_ID" method="POST">
@@ -262,6 +257,21 @@
 
 .formbold-back-link a:hover {
     text-decoration: underline;
+}
+
+.formbold-close-btn {
+    font-size: 32px; /* Make the X bigger */
+    font-weight: bold;
+    color: #6a64f1; /* Adjust color to match theme */
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.formbold-close-btn:hover {
+    text-decoration: none;
+    color: #4a47c9; /* Slightly darker on hover */
 }
 
 </style>
